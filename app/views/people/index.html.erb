@@ -1,9 +1,28 @@
-<h1>People</h1>
+<h1>People Info</h1>
 
 <% @people.each do |person| %>
 
+  <%= link_to person.first_name, person_path(person) %>
   <%= link_to 'Show Person', person_path(person) %>
   <%= link_to 'Edit Person', edit_person_path(person) %>
   <%= link_to 'Delete Person', person, method: :delete %>
 
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<%= form_for @person do |p| %>
+
+
+  <%= p.label :first_name %>
+  <%= p.text_field :first_name, class: 'form-control' %>
+
+  <%= p.label :last_name %>
+  <%= p.text_field :last_name, class: 'form-control' %>
+
+  <%= p.label :age %>
+  <%= p.text_field :age, class: 'form-control' %>
+
+  <%= p.label :gender %>
+  <%= p.text_field :gender, class: 'form-control' %>
+
+
+  <%= p.label :hair_color %>
+  <%= p.text_field :hair_color, class: 'form-control' %>
+
+  <%= p.label :eye_color %>
+  <%= p.text_field :eye_color, class: 'form-control' %>
+
+  <%= p.label :living %>
+  <%= p.check_box :alive %>
+
+
+  <%= p.submit class: 'btn btn-primary' %>
+
+<% end %>
