@@ -7,6 +7,7 @@ class PeopleController < ApplicationController
   end
 
   def show
+
   end
 
   def new
@@ -23,6 +24,7 @@ class PeopleController < ApplicationController
   end
 
   def edit
+
   end
 
   def update
@@ -44,8 +46,9 @@ class PeopleController < ApplicationController
     params.require(:person).permit(:first_name, :last_name, :age, :hair_color, :eye_color, :gender, :alive)
   end
 
-  def find_person
+  def set_person
     @person = Person.find(params[:id])
   end
+
 
 end
